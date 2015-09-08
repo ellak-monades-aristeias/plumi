@@ -1,28 +1,25 @@
-Plumi video sharing system 
-==========================
+Plumi free software video sharing web app
+=========================================
+Το Plumi είναι λογισμικό ανοιχτού κώδικα για τη δημιουργία video web portals. Παρέχει ένα λειτουργικό
+σύνολο από προχωρημένα χαρακτηριστικά τα οποία επιτρέπουν τη δημιουργία portal στα οποία
+φιλοξενούνται, αρχειοθετούνται και είναι διαθέσιμα προς προβολή videos. Ουσιαστικά επιτρέπει τη
+δημιουργία κόμβων τύπου youtube στα οποία οι διαχειριστές των κόμβων αυτών έχουν τον πλήρη έλεγχο
+και αποφεύγονται οι περιορισμοί που βάζουν τα μεγάλα εμπορικά video συστήματα (διαφημίσεις,
+λογοκρισία, όρια στο μέγεθος, όρια στην ποιότητα/τύπο αρχείων κτλ). Είναι ιδανική λύση για δημιουργία
+video portals με υψηλό βαθμό εξειδίκευσης (πχ κοινότητες, σχολεία, εκπαίδευση), είτε για περιβάλλοντα με
+ανάγκες περιορισμού της πρόσβασης στο υλικό (πχ intranets, εταιρίες, δημόσιο).
 
-Plumi is a Free Software video-sharing web application based on Plone and produced by **https://www.engagemedia.org** in collaboration with **https://unweb.me**.
-
-Plumi enables you to create your own sophisticated video-sharing site. It includes a beautiful adaptive skin using Diazo, server-side transcoding of most video formats, upload progress bar, thumbnail extraction, HTML5 video playback and embedding, subtitles using Amara, large file uploading via FTP, social media integration, threaded commenting and user feedback forms, customised user profiles and a range of other useful features.
-
-More info
-=========
-
-- Check out **http://plumi.org**
-- For the Plumi Manual visit **http://en.flossmanuals.net/Plumi/Introduction**
-- For a demo Plumi site visit **http://demo.plumi.org**
-- For the most up to date Plumi resource, checkout **https://trinket.io/mgogoulos/courses/plumi-4-5#/**
-
-Installation and migration
-=========================
-
-- For installation instructions see docs/INSTALL.rst
-- For migration instructions see docs/MIGRATE.txt
-- Code repository: **https://github.com/plumi/plumi.app**
-
-Help and support
+Τεχνικά στοιχεία
 ================
+Το Plumi είναι υλοποιημένο σε Python και πάνω στο CMS Plone. Η εγκατάσταση γίνεται με το σύστημα buildout της Python και το λογισμικό χειρίζεται ο supervisord
 
-- Questions and comments to discuss@lists.plumi.org
-- Report bugs at **http://plumi.org/newticket**
+Μονάδες Αριστείας ΕΛ/ΛΑΚ
+========================
+Τα παραδοτέα με αφορμή τη συμμετοχή στις ΜΑ της ΕΛ/ΛΑΚ θα είναι τα εξης:
 
+* Απλοποίηση της εγκατάστασης και έλεγχος λειτουργίας σε σύγχρονα περιβάλλοντα
+* Διόρθωση προβλημάτων και αναβάθμιση εκδόσεων
+* Βελτιώσεις στην τεκμηρίωση (documentation)
+* Αισθητικές επεμβάσεις
+
+Για όποιες αλλαγές θα ανοίξουμε pull requests στο upstram repository του plumi project
