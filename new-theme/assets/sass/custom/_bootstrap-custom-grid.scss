@@ -1,0 +1,93 @@
+@import "compass/layout/grid-background";
+@import "compass/layout/stretching";
+@import "compass/utilities";
+@import "compass/css3";
+
+@mixin bootstrap-grid-bg( $return:all ) {
+	
+	$baselineHeight : $line-height-base + em;	// Override Compass default value [1.5em]	with Bootstrap value
+	// $baselineColor : rgba(0, 0, 0, 0.5);	// Override Compass default value [rgba(0, 0, 0, 0.5)]
+	$baselineColor : rgba(0,0,99,.25); // Override Compass default value [rgba(100, 100, 225, 0.25)]
+
+	$totalColumns : $grid-columns; // Override Compass default value [24]	with Bootstrap value
+
+	$columnWidth : 60px;  // Override Compass default value [30px]
+	$gutterWidth : $grid-gutter-width; // Override Compass default value [10px]	with Bootstrap value
+
+	$backgroundOffset : 15px; // Override Compass default value [0px]
+	
+	// $columnColor : transparent; // Override Compass default value [transparent]
+	$columnColor : rgba(#ffeb7b, .15); // Override Compass default value [transparent]
+	// $gutterColor : rgba(100, 100, 225, 0.25); // Override Compass default value [rgba(100, 100, 225, 0.25)]
+	$gutterColor : rgba(5,4,144,.15); // Override Compass default value [rgba(100, 100, 225, 0.25)]
+
+	$forceFluid : true;  // Override Compass default value [false]
+
+	@if( $return == baseline ){
+
+		@include baseline-grid-background(
+			$baselineHeight, 
+			$baselineColor
+		);
+
+	}
+	@elseif( $return == column ){
+		
+		@include column-grid-background(
+			$totalColumns,
+			$columnWidth,
+			$gutterWidth,
+			$backgroundOffset,
+			$columnColor,
+			$gutterColor,
+			$forceFluid
+		);
+
+	}
+	@else{
+
+		@include grid-background(
+			$totalColumns,
+			$columnWidth,
+			$gutterWidth,
+			$baselineHeight,
+			$backgroundOffset,
+			$columnColor,
+			$gutterColor,
+			$baselineColor,
+			$forceFluid
+		);
+	}
+
+}
+
+.bootstrap-grid{
+	@include stretch();
+	position:fixed;
+	@include bootstrap-grid-bg( $return:baseline );
+	/* z-index:+1; */
+}
+
+.bootstrap-grid span{
+	position:fixed;
+	top:0;
+	left:50%;
+	height:100%;
+	display:block;
+	@include bootstrap-grid-bg( $return:column );
+	width:$container-lg;
+	margin-left:-( $container-lg / 2);
+	@media (max-width: $screen-md-max) {
+		width:$container-md;
+		margin-left:-( $container-md / 2);
+	}
+	@media (max-width: $screen-sm-max) {
+		width:$container-sm;
+		margin-left:-( $container-sm / 2);
+	}
+	@media (max-width: $screen-xs-max) {
+		width:100%;
+		left:0;
+		margin-left:0;
+	}
+}
