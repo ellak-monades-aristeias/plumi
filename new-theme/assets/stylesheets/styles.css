@@ -6,6 +6,10 @@ img {
   max-width: 100%;
 }
 
+textarea {
+  max-width: 100%;
+}
+
 hr {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -184,6 +188,21 @@ hr {
 
 .wrapper {
   background-color: #ededed;
+}
+
+sup.req-star {
+  top: -0.2em;
+  font-size: 110%;
+  font-weight: bold;
+  color: #d9534f;
+}
+
+.req-note {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 12px;
+  color: #d9534f;
 }
 
 /* HOME PAGE & SINGLE VIDEO PAGE & LATESTS VIDEOS PAGE */
@@ -446,174 +465,6 @@ hr {
   height: 30px;
   background: #333;
   display: inline-block;
-}
-
-/* LOGIN PAGE */
-.login-wrapper {
-  background-color: #fff;
-  border: 1px solid #e6e6e6;
-  -moz-box-shadow: 0 1px 2px 0 rgba(230, 230, 230, 0.9);
-  -webkit-box-shadow: 0 1px 2px 0 rgba(230, 230, 230, 0.9);
-  box-shadow: 0 1px 2px 0 rgba(230, 230, 230, 0.9);
-}
-.login-wrapper h1 {
-  margin: 0;
-  padding: 30px 0;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1em;
-  text-align: center;
-  background: #f5f5f5;
-  border-bottom: 1px solid #e6e6e6;
-  background-color: #75ad0a;
-  color: #fff;
-}
-
-.login-wrapper-inner {
-  padding: 15px 30px 30px;
-}
-
-.login-form label,
-.login-form input[type="text"],
-.login-form input[type="email"],
-.login-form input[type="password"],
-.login-form .input-help,
-.register-form label,
-.register-form input[type="text"],
-.register-form input[type="email"],
-.register-form input[type="password"],
-.register-form .input-help,
-.lost-password-form label,
-.lost-password-form input[type="text"],
-.lost-password-form input[type="email"],
-.lost-password-form input[type="password"],
-.lost-password-form .input-help {
-  width: 100%;
-  display: inline-block;
-}
-.login-form label,
-.register-form label,
-.lost-password-form label {
-  color: #777777;
-}
-.login-form input[type="text"],
-.login-form input[type="email"],
-.login-form input[type="password"],
-.register-form input[type="text"],
-.register-form input[type="email"],
-.register-form input[type="password"],
-.lost-password-form input[type="text"],
-.lost-password-form input[type="email"],
-.lost-password-form input[type="password"] {
-  padding: 9px 10px;
-  border: 1px solid #ccc;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-}
-.login-form .input-help,
-.register-form .input-help,
-.lost-password-form .input-help {
-  margin-bottom: 25px;
-  font-size: 12px;
-  color: #777777;
-}
-.login-form sup.req-star,
-.register-form sup.req-star,
-.lost-password-form sup.req-star {
-  top: -0.2em;
-  font-size: 110%;
-  font-weight: bold;
-  color: #d9534f;
-}
-.login-form input[type="submit"],
-.register-form input[type="submit"],
-.lost-password-form input[type="submit"] {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  width: 100%;
-}
-
-.login-form,
-.lost-password-form {
-  padding: 15px 0;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #e6e6e6;
-}
-.login-form input[type="text"],
-.login-form input[type="email"],
-.login-form input[type="password"],
-.lost-password-form input[type="text"],
-.lost-password-form input[type="email"],
-.lost-password-form input[type="password"] {
-  margin-bottom: 15px;
-}
-.login-form input[type="submit"],
-.lost-password-form input[type="submit"] {
-  margin-top: 10px;
-  margin-bottom: 15px;
-}
-
-.register-form {
-  padding-top: 15px;
-}
-.register-form input[type="text"],
-.register-form input[type="email"],
-.register-form input[type="password"] {
-  margin-bottom: 5px;
-}
-.register-form input[type="submit"] {
-  margin-top: 10px;
-}
-.register-form input.register-captcha-code[type="text"] {
-  position: relative;
-  width: 70%;
-  float: left;
-}
-.register-form .register-captcha-code-img {
-  position: relative;
-  display: table;
-  width: 27%;
-  float: right;
-  height: 39px;
-  padding: 6px 0 0;
-  text-align: center;
-  vertical-align: middle;
-  background: #c0c0c0;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  border: 1px solid #ccc;
-}
-.register-form .register-captcha-code-img img {
-  position: relative;
-  display: inline-block;
-  width: auto;
-  height: auto;
-}
-
-.lost-password-help,
-.register-help,
-.lost-username-help {
-  text-align: center;
-  font-size: 12px;
-  color: #777777;
-}
-
-.lost-password-help p {
-  margin-bottom: 15px;
-}
-
-.register-help p {
-  margin-bottom: 0px;
-}
-
-.lost-username-help p {
-  margin-bottom: 0px;
-}
-
-.lost-password-info {
-  margin: 15px 0;
 }
 
 /* HOME PAGE */
@@ -1178,6 +1029,218 @@ hr {
     width: 87.0%;
   }
 }
+/* LOGIN PAGE & REGISTER PAGE &  LOST PASSWORD PAGE & CONTACT PAGE */
+.login-form label,
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form textarea,
+.login-form .input-help,
+.register-form label,
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form textarea,
+.register-form .input-help,
+.lost-password-form label,
+.lost-password-form input[type="text"],
+.lost-password-form input[type="email"],
+.lost-password-form input[type="password"],
+.lost-password-form textarea,
+.lost-password-form .input-help,
+.contact-form label,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="password"],
+.contact-form textarea,
+.contact-form .input-help {
+  width: 100%;
+  display: inline-block;
+}
+.login-form label,
+.register-form label,
+.lost-password-form label,
+.contact-form label {
+  color: #777777;
+}
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form textarea,
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form textarea,
+.lost-password-form input[type="text"],
+.lost-password-form input[type="email"],
+.lost-password-form input[type="password"],
+.lost-password-form textarea,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="password"],
+.contact-form textarea {
+  padding: 9px 10px;
+  border: 1px solid #ccc;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.login-form .input-help,
+.register-form .input-help,
+.lost-password-form .input-help,
+.contact-form .input-help {
+  margin-bottom: 25px;
+  font-size: 12px;
+  color: #777777;
+}
+.login-form input[type="submit"],
+.register-form input[type="submit"],
+.lost-password-form input[type="submit"],
+.contact-form input[type="submit"] {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  width: 100%;
+}
+
+.login-form,
+.lost-password-form {
+  padding: 15px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"],
+.lost-password-form input[type="text"],
+.lost-password-form input[type="email"],
+.lost-password-form input[type="password"] {
+  margin-bottom: 15px;
+}
+
+.login-form input[type="submit"],
+.lost-password-form input[type="submit"],
+.contact-form input[type="submit"] {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.register-form input.register-captcha-code[type="text"],
+.contact-form input.register-captcha-code[type="text"] {
+  position: relative;
+  width: 63.6666667%;
+  float: left;
+}
+.register-form .register-captcha-code-img,
+.contact-form .register-captcha-code-img {
+  position: relative;
+  display: table;
+  width: 33.3333333%;
+  float: right;
+  height: 39px;
+  padding: 6px 0 0;
+  text-align: center;
+  vertical-align: middle;
+  background: #c0c0c0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+}
+.register-form .register-captcha-code-img img,
+.contact-form .register-captcha-code-img img {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+
+.lost-password-help,
+.register-help,
+.lost-username-help {
+  text-align: center;
+  font-size: 12px;
+  color: #777777;
+}
+
+/* LOGIN PAGE */
+.login-wrapper {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  -moz-box-shadow: 0 1px 2px 0 rgba(230, 230, 230, 0.9);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(230, 230, 230, 0.9);
+  box-shadow: 0 1px 2px 0 rgba(230, 230, 230, 0.9);
+}
+.login-wrapper h1 {
+  margin: 0;
+  padding: 30px 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1em;
+  text-align: center;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #75ad0a;
+  color: #fff;
+}
+
+.login-wrapper-inner {
+  padding: 15px 30px 30px;
+}
+
+.lost-password-help p {
+  margin-bottom: 15px;
+}
+
+.register-help p {
+  margin-bottom: 0px;
+}
+
+/* REGISTER PAGE */
+.register-form {
+  padding-top: 15px;
+}
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  margin-bottom: 5px;
+}
+.register-form input[type="submit"] {
+  margin-top: 10px;
+}
+
+/* CONTACT PAGE */
+.contact-form-wrapper {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  -moz-box-shadow: 0 1px 2px 0 rgba(230, 230, 230, 0.9);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(230, 230, 230, 0.9);
+  box-shadow: 0 1px 2px 0 rgba(230, 230, 230, 0.9);
+}
+
+.contact-form-inner {
+  padding: 15px;
+}
+.contact-form-inner h1 {
+  font-size: 24px;
+  margin: 5px 0 15px;
+}
+
+.contact-form {
+  display: inline-block;
+  width: 100%;
+  padding-top: 15px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.contact-subject,
+.contact-form input.register-captcha-code[type="text"] {
+  margin-bottom: 25px;
+}
+
+.contact-message {
+  min-height: 150px;
+}
+
 #sidebar {
   font-size: 12px;
 }

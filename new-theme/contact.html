@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html ng-app="plumi_app" ng-strict-di>
+
+<head>
+    <title>Plumi | Contact</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <!-- <link rel="stylesheet" type="text/css" media="print" href="assets/stylesheets/print.css"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/lib/mediaelementplayer.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/styles.css">
+    <!--[if IE]>
+<link href="assets/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="header">
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 header-logo-outer">
+                            <div class="header-inner">
+                                <a href="home.html" title="" class="logo"><img src="img/logo_wide.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 pull-right header-buttons-outer">
+                            <div class="header-inner">
+                                <div class="header-buttons">
+                                    <div class="btn-group browse-group" role="group">
+                                        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Browse
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" title="">Genres</a></li>
+                                            <li><a href="#" title="">Topics</a></li>
+                                            <li><a href="#" title="">Countries</a></li>
+                                            <li><a href="#" title="">Members</a></li>
+                                            <li><a href="#" title="">Languages</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group publish-group" role="group">
+                                        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Publish
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" title="">Video</a></li>
+                                            <li><a href="#" title="">Event</a></li>
+                                            <li><a href="#" title="">News</a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="login.html" title="" class="btn btn-primary btn-sm login-btn">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-5 col-lg-7 header-search-outer">
+                            <div class="header-inner">
+                                <div class="header-search">
+                                    <form name="" id="" class="input-group ng-pristine ng-valid">
+                                        <input type="text" class="form-control" placeholder="Search...">
+                                        <span class="input-group-btn">
+<button class="btn btn-default" type="submit">
+<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                        </button>
+                                        </span>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div id="main" class="gutter-top">
+            <main>
+                <div class="container">
+                    <div class="row">
+                    <div id="main-content" class="col-lg-9 col-md-8 col-sm-12 col-xs-12 gutter-bottom">
+                    <plumi-contact-form><div class="contact-form-wrapper gutter-bottom">
+    <div class="contact-form-inner">
+
+        <h1>Contact form</h1>
+        <form class="contact-form ng-pristine ng-valid">
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <label for="name">Name <sup class="req-star">*</sup></label>
+                    <input type="text" name="name" id="" required="">
+                    <span class="input-help">Please enter your full name.</span>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <label for="email">E-mail <sup class="req-star">*</sup></label>
+                    <input type="email" name="email" id="" required="">
+                    <span class="input-help">Please enter your e-mail address.</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <label for="subject">Subject <sup class="req-star">*</sup></label>
+                    <input type="text" name="subject" id="" class="contact-subject" required="">
+                </div>
+            </div>
+
+            <label for="message">Message <sup class="req-star">*</sup></label>
+            <textarea name="message" id="" class="contact-message" required=""></textarea>
+            <span class="input-help">Please enter the message you want to send.</span>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-9">
+                    <label for="captcha-code">Type the code <sup class="req-star">*</sup></label>
+                    <input type="text" name="captcha-code" class="register-captcha-code" required="">
+                    <span class="register-captcha-code-img"><img src="http://demo.plumi.org/getCaptchaImage/000d040a02040301080c1e0d046d070a6e01010105050002" alt="Enter the word"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-2 col-md-3">
+                    <input type="submit" name="submit-contact" class="contact-submit btn btn-primary" value="Submit">
+                </div>
+            </div>
+        </form>
+       
+    </div>
+</div></plumi-contact-form>
+                </div>
+                        <div id="sidebar" class="col-lg-3 col-md-4 col-sm-12 col-xs-12 gutter-bottom">
+                            <aside>
+                                <div class="sidebar-box gutter-bottom featured-content">
+                                    <div class="sidebar-inner">
+                                        <img src="img/image_preview.jpg" alt="">
+                                        <h5><strong>Plumi 4.5 Video Sharing</strong></h5> This is the demo site for Plumi, a free open source video sharing app for the web. Plumi is a Python package built on the Plone CMS. Features auto transcoding, HTML5 video player, video podcasting, upload via FTP, Creative Commons, Amara subtitling engine, video analytics and more.
+                                        <br>
+                                        <br><a href="#" title="">Click here</a> to read more or just try it out!
+                                    </div>
+                                </div>
+                                <div class="sidebar-box auto-sbox gutter-bottom">
+                                    <h3 class="sidebar-title"><a href="#" title="">News and Events</a></h3>
+                                    <div class="sidebar-inner">
+                                        <ul class="sidebar-list">
+                                            <li>
+                                                <a href="#" title="">Plumi 4.5 Final Released!</a>
+                                                <span class="list-item-meta"><time>January 30, 2013</time></span>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">World Plone Day</a>
+                                                <span class="list-item-meta"><time>January 29, 2013</time></span>
+                                            </li>
+                                        </ul>
+                                        <div class="sidebar-more"><a href="#" title="">More</a></div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-box auto-sbox gutter-bottom">
+                                    <h3 class="sidebar-title"><a href="#" title="">Recent Comments</a></h3>
+                                    <div class="sidebar-inner">
+                                        <ul class="sidebar-list">
+                                            <li>
+                                                <a href="#" title="">IvyChen on 舍得灵感</a>
+                                                <span class="list-item-meta"><time>August 27, 2015</time></span>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">IvyChen on 舍得灵感</a>
+                                                <span class="list-item-meta"><time>August 27, 2015</time></span>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">IvyChen on 舍得灵感</a>
+                                                <span class="list-item-meta"><time>August 27, 2015</time></span>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">IvyChen on 舍得灵感</a>
+                                                <span class="list-item-meta"><time>August 27, 2015</time></span>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">贾钰 on 疯了桂宝</a>
+                                                <span class="list-item-meta"><time>August 27, 2015</time></span>
+                                            </li>
+                                        </ul>
+                                        <div class="sidebar-more"><a href="#" title="">More</a></div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-box gutter-bottom featured-filmaker">
+                                    <div class="sidebar-inner">
+                                        <h3 class="sidebar-title"><a href="#" title="">EngageMedia.org Website</a></h3>
+                                        <a href="" title="" class="ff-img-link">
+                                            <img src="img/em_image_preview.jpg" alt="">
+                                            <div class="rollover">
+                                                EngageMedia was proud to go live in July 2012 with our newly designed EngageMedia.org website based on the Plumi free software video sharing application. Huge congratulations to the whole team! Especially Yiannis, Dimo, Markos, Mike and Christos from Unweb.
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div id="footer">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="footer-box footer-box-first">
+                            <img src="img/logo-footer.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="footer-box">
+                            <h3 class="footer-title">Content</h3>
+                            <ul class="footer-list">
+                                <li><a href="#" title="">Videos</a></li>
+                                <li><a href="#" title="">News</a></li>
+                                <li><a href="#" title="">Events</a></li>
+                                <li><a href="#" title="">Comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="footer-box footer-box-last">
+                            <h3 class="footer-title">About Plumi</h3>
+                            <ul class="footer-list">
+                                <li><a href="#" title="">Plumi Blog</a></li>
+                                <li><a href="#" title="">Plumi Manual</a></li>
+                                <li><a href="#" title="">EngageMedia.org</a></li>
+                                <li><a href="#" title="">Unweb.me</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="bottom-inner">
+                        <a href="#">powered by <strong>Plumi</strong><span class="bottom-logo"></span></a>- Except where otherwise noted, content on this site is licensed under a <strong><a href="#">Creative Commons Attribution 3.0 Australia Licence.</a></strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/lib/mediaelement-and-player.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
