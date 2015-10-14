@@ -76,33 +76,31 @@ video page σε mobile συσκευή (καινούργιο theme)
 Εγκατάσταση
 ===========
 
-Οι οδηγίες εγκατάστασης του plumi portal είναι για DEBIAN 8, το οποίο στην περίπτωση μας δημιουργήσαμε στον cloud provider Digital Ocean:
+Οι οδηγίες εγκατάστασης του plumi portal είναι για DEBIAN 8, το οποίο στην περίπτωση μας δημιουργήσαμε στον cloud provider Digital Ocean::
 
     $ ssh root@46.101.47.180
-
     root@plumi:~# lsb_release  -a
     Release:    8.2
     Codename:   jessie
 
-Αρχικά φροντίζουμε το σύστημα να είναι up to date και εγκαθιστούμε τα απαραίτητα system packages:
+Αρχικά φροντίζουμε το σύστημα να είναι up to date και εγκαθιστούμε τα απαραίτητα system packages::
 
     root@plumi:~# apt-get update; apt-get upgrade -y
     root@plumi:~# apt-get install -y build-essential pkg-config git-core python-dev libjpeg62-turbo-dev zlib1g-dev libxslt1-dev groff-base python-virtualenv vim libssl-dev
 
-Στη συνέχεια κανουμε clone το plumi και εγκαθιστούμε ενα virtual environment της python για να το εγκαταστήσουμε μέσα:
+Στη συνέχεια κανουμε clone το plumi και εγκαθιστούμε ενα virtual environment της python για να το εγκαταστήσουμε μέσα::
 
     root@plumi:~# cd /home/
     root@plumi:/home# git clone https://github.com/ellak-monades-aristeias/plumi
     root@plumi:/home# cd plumi
     root@plumi:/home/plumi# virtualenv .
 
-Προσθέτουμε τον χρήστη zope ο οποίος θα τρέχει το plumi, αν θέλουμε ο χρήστης να είναι διαφορετικός κάνουμε edit το αρχείο site.cfg και ορίζουμε εκεί το χρήστη.:
-
+Προσθέτουμε τον χρήστη zope ο οποίος θα τρέχει το plumi, αν θέλουμε ο χρήστης να είναι διαφορετικός κάνουμε edit το αρχείο site.cfg και ορίζουμε εκεί το χρήστη.::
 
     root@plumi:/home/plumi# adduser zope
 
 
-Θα χρειαστεί επίσης να κάνουμε την εξής αλλαγή στο site.cfg:
+Θα χρειαστεί επίσης να κάνουμε την εξής αλλαγή στο site.cfg::
 
     www-server-name = plumi.gr
     www-videoserver-name = videos.plumi.gr
@@ -112,27 +110,27 @@ video page σε mobile συσκευή (καινούργιο theme)
 Τα hostname μας πρέπει να αντιστοιχούν στο μηχάνημα αυτό και συγκεκριμένα πρέπει να υπάρχουν εγγραφές για τα 3 domain names (για την περίπτωση μας): plumi.gr,  videos.plumi.gr, www.plumi.gr. Αν δεν έχουμε πρόσβαση σε dns server τουλάχιστον θα πρέπει να ορίσουμε στο ίδιο το μηχάνημα τα 3 αυτά hostnames, όπω επίσης και στο /etc/hosts του συστήματος απο το οποίο θα έχουμε πρόσβαση στο video portal.
 
 
-Προχωράμε με την εγκατάσταση, όπου θα τρέξουμε το buildout 2 φορές, μια στον φάκελο ffmpeg και μια στο plumi:
+Προχωράμε με την εγκατάσταση, όπου θα τρέξουμε το buildout 2 φορές, μια στον φάκελο ffmpeg και μια στο plumi::
 
     root@plumi:/home/plumi# cd ffmpeg/
     root@plumi:/home/plumi/ffmpeg# ../bin/python bootstrap.py
     root@plumi:/home/plumi/ffmpeg# ./bin/buildout -v
 
-και αφού αυτό ολοκληρώσει:
+και αφού αυτό ολοκληρώσει::
 
     root@plumi:/home/plumi# ./bin/python bootstrap.py
     root@plumi:/home/plumi# ./bin/buildout -v
 
 Αν το buildout σπάσει κάποια στιγμή το ξανατρέχουμε και τη δεύτερη φορά ολοκληρώνει χωρίς προβλήματα.
 
-Αφού τελειώσει το buildout τρέχουμε τις εξής εντολές:
+Αφού τελειώσει το buildout τρέχουμε τις εξής εντολές::
 
     root@plumi:/home/plumi# mkdir var/.python-eggs && chown -R zope. var/.python-eggs && chown -R zope. parts/cache parts/varnish-build
     root@plumi:/home/plumi# PYTHON_EGG_CACHE="/home/plumi/var/.python-eggs"
     root@plumi:/home/plumi# export PYTHON_EGG_CACHE
     root@plumi:/home/plumi# ./bin/supervisord
 
-και τσεκάρουμε οτι όλες οι υπηρεσίες είναι σε κατάσταση runing:
+και τσεκάρουμε οτι όλες οι υπηρεσίες είναι σε κατάσταση runing::
 
     root@plumi:/home/plumi# ./bin/supervisorctl status
     cache                            RUNNING   pid 29754, uptime 2:50:01
@@ -144,7 +142,7 @@ video page σε mobile συσκευή (καινούργιο theme)
     zeo                              RUNNING   pid 29749, uptime 2:50:01
 
 
-Μπορούμε να προσθέσουμε στο /etc/rc.local για να ξεκινάει αυτόματα το plumi:
+Μπορούμε να προσθέσουμε στο /etc/rc.local για να ξεκινάει αυτόματα το plumi::
 
     cd /home/plumi && PYTHON_EGG_CACHE="/home/plumi/var/.python-eggs" && export PYTHON_EGG_CACHE && ./bin/supervisord
 
