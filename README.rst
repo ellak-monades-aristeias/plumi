@@ -149,3 +149,8 @@ video page σε mobile συσκευή (καινούργιο theme)
 
 
 Αναλυτικές οδηγίες υπάρχουν επίσης στο https://mgogoulos.trinket.io/plumi-4-5#/installation/basic-setup-after-installation
+
+Demo
+====
+
+Demo του plumi υπάρχει στο http://demo.plumi.org
