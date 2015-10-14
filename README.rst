@@ -29,42 +29,42 @@ video portals με υψηλό βαθμό εξειδίκευσης (πχ κοιν
 =======
 
 
-index page μετά τις αλλαγές
+index page (καινούργιο theme)
 
 .. image:: screenshots/index.png
-    :alt: index page μετά τις αλλαγές
+    :alt: index page (καινούργιο theme)
     :width: 700
     :align: center
 
 
-τρέχουσα index page για το plumi
+index page (υπάρχον theme)
 
 .. image:: screenshots/current-index.png
-    :alt: τρέχουσα index page για το plumi
+    :alt: index page (υπάρχον theme)
     :width: 700
     :align: center
 
 
-σελίδα βίντεο (μετά τις αλλαγές)
+video page (καινούργιο theme)
 
 .. image:: screenshots/video.png
-    :alt: σελίδα βίντεο (μετά τις αλλαγές)
+    :alt: video page (καινούργιο theme)
     :width: 700
     :align: center
 
 
-σελίδα αναζήτησης (μετά τις αλλαγές)
+search page (καινούργιο theme)
 
 .. image:: screenshots/search.png
-    :alt: σελίδα αναζήτησης (μετά τις αλλαγές)
+    :alt: search page (καινούργιο theme)
     :width: 700
     :align: center
 
 
 
-σελίδα βίντεο σε mobile συσκευή(μετά τις αλλαγές)
+video page σε mobile συσκευή (καινούργιο theme)
 
 .. image:: screenshots/mobile.png
-    :alt: σελίδα βίντεο σε mobile συσκευή(μετά τις αλλαγές)
+    :alt: video page σε mobile συσκευή (καινούργιο theme)
     :width: 700
     :align: center
