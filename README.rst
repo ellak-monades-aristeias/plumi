@@ -30,28 +30,28 @@ video portals με υψηλό βαθμό εξειδίκευσης (πχ κοιν
 Εικόνες
 
 index page μετά τις αλλαγές
-.. image:: https://raw.githubusercontent.com/ellak-monades-aristeias/plumi/master/screenshots/index.png
+.. image:: screenshots/index.png
     :alt: index page μετά τις αλλαγές
     :width: 700
     :align: center
 
 
 τρέχουσα page
-.. image:: https://raw.githubusercontent.com/ellak-monades-aristeias/plumi/master/screenshots/current-index.png
+.. image:: screenshots/current-index.png
     :alt: τρέχουσα page
     :width: 700
     :align: center
 
 
 σελίδα βίντεο (μετά τις αλλαγές)
-.. image:: https://raw.githubusercontent.com/ellak-monades-aristeias/plumi/master/screenshots/video.png
+.. image:: screenshots/video.png
     :alt: σελίδα βίντεο (μετά τις αλλαγές)
     :width: 700
     :align: center
 
 
 σελίδα αναζήτησης (μετά τις αλλαγές)
-.. image:: https://raw.githubusercontent.com/ellak-monades-aristeias/plumi/master/screenshots/search.png
+.. image:: screenshots/search.png
     :alt: σελίδα αναζήτησης (μετά τις αλλαγές)
     :width: 700
     :align: center
@@ -59,7 +59,7 @@ index page μετά τις αλλαγές
 
 
 σελίδα βίντεο σε mobile συσκευή(μετά τις αλλαγές)
-.. image:: https://raw.githubusercontent.com/ellak-monades-aristeias/plumi/master/screenshots/mobile.png
+.. image:: screenshots/mobile.png
     :alt: σελίδα βίντεο σε mobile συσκευή(μετά τις αλλαγές)
     :width: 700
     :align: center
