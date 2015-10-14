@@ -27,23 +27,26 @@ video portals με υψηλό βαθμό εξειδίκευσης (πχ κοιν
 
 Εικόνες
 =======
-Εικόνες
+
 
 index page μετά τις αλλαγές
+
 .. image:: screenshots/index.png
     :alt: index page μετά τις αλλαγές
     :width: 700
     :align: center
 
 
-τρέχουσα page
+τρέχουσα index page για το plumi
+
 .. image:: screenshots/current-index.png
-    :alt: τρέχουσα page
+    :alt: τρέχουσα index page για το plumi
     :width: 700
     :align: center
 
 
 σελίδα βίντεο (μετά τις αλλαγές)
+
 .. image:: screenshots/video.png
     :alt: σελίδα βίντεο (μετά τις αλλαγές)
     :width: 700
@@ -51,6 +54,7 @@ index page μετά τις αλλαγές
 
 
 σελίδα αναζήτησης (μετά τις αλλαγές)
+
 .. image:: screenshots/search.png
     :alt: σελίδα αναζήτησης (μετά τις αλλαγές)
     :width: 700
@@ -59,6 +63,7 @@ index page μετά τις αλλαγές
 
 
 σελίδα βίντεο σε mobile συσκευή(μετά τις αλλαγές)
+
 .. image:: screenshots/mobile.png
     :alt: σελίδα βίντεο σε mobile συσκευή(μετά τις αλλαγές)
     :width: 700
