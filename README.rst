@@ -50,6 +50,7 @@ video page (καινούργιο theme)
 .. image:: screenshots/video.png
     :alt: video page (καινούργιο theme)
     :width: 600
+    :height: 403
     :align: center
 
 
@@ -68,5 +69,5 @@ video page σε mobile συσκευή (καινούργιο theme)
 .. image:: screenshots/mobile.png
     :alt: video page σε mobile συσκευή (καινούργιο theme)
     :width: 500
-    :height: 336
+    :height: 608
     :align: center
