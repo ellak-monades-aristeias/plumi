@@ -58,6 +58,7 @@ search page (καινούργιο theme)
 .. image:: screenshots/search.png
     :alt: search page (καινούργιο theme)
     :width: 600
+    :height: 414
     :align: center
 
 
@@ -67,4 +68,5 @@ video page σε mobile συσκευή (καινούργιο theme)
 .. image:: screenshots/mobile.png
     :alt: video page σε mobile συσκευή (καινούργιο theme)
     :width: 500
+    :height: 336
     :align: center
