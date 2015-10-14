@@ -49,7 +49,7 @@ video page (καινούργιο theme)
 
 .. image:: screenshots/video.png
     :alt: video page (καινούργιο theme)
-    :width: 700
+    :width: 600
     :align: center
 
 
@@ -57,7 +57,7 @@ search page (καινούργιο theme)
 
 .. image:: screenshots/search.png
     :alt: search page (καινούργιο theme)
-    :width: 700
+    :width: 600
     :align: center
 
 
@@ -66,5 +66,5 @@ video page σε mobile συσκευή (καινούργιο theme)
 
 .. image:: screenshots/mobile.png
     :alt: video page σε mobile συσκευή (καινούργιο theme)
-    :width: 700
+    :width: 500
     :align: center
