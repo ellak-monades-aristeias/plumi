@@ -160,8 +160,8 @@ Demo του plumi υπάρχει στο http://demo.plumi.org
 =========
 
 Παραδοτέο  -  Σύντομη περιγραφή  -  URL
-1. Απλοποίηση της εγκατάστασης και έλεγχος λειτουργίας σε σύγχρονα περιβάλλοντα  - https://github.com/ellak-monades-aristeias/plumi/blob/master/README.rst
-2. Διόρθωση προβλημάτων και αναβάθμιση εκδόσεων -  https://github.com/ellak-monades-aristeias/plumi/blob/master/buildout.cfg
-3. Βελτιώσεις στην τεκμηρίωση (documentation)  - https://github.com/ellak-monades-aristeias/plumi/blob/master/README.rst
-4. Αισθητικές επεμβάσεις – καινούργιο theme  - https://github.com/ellak-monades-aristeias/plumi/tree/master/new-theme
+* 1. Απλοποίηση της εγκατάστασης και έλεγχος λειτουργίας σε σύγχρονα περιβάλλοντα  - https://github.com/ellak-monades-aristeias/plumi/blob/master/README.rst
+* 2. Διόρθωση προβλημάτων και αναβάθμιση εκδόσεων -  https://github.com/ellak-monades-aristeias/plumi/blob/master/buildout.cfg
+* 3. Βελτιώσεις στην τεκμηρίωση (documentation)  - https://github.com/ellak-monades-aristeias/plumi/blob/master/README.rst
+* 4. Αισθητικές επεμβάσεις – καινούργιο theme  - https://github.com/ellak-monades-aristeias/plumi/tree/master/new-theme
 
